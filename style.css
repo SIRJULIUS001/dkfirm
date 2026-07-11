@@ -402,3 +402,169 @@
 }
 
 }
+/*=========================================
+ TRUST SECTION
+=========================================*/
+
+.trust-section{
+
+    padding:70px 0;
+
+    background:#ffffff;
+
+}
+
+.trust-item{
+
+    padding:30px 20px;
+
+    border-radius:16px;
+
+    transition:.35s;
+
+    height:100%;
+
+}
+
+.trust-item:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 20px 45px rgba(0,0,0,.08);
+
+}
+
+.trust-item i{
+
+    font-size:2.3rem;
+
+    color:#0F4C81;
+
+    margin-bottom:20px;
+
+}
+
+.trust-item h6{
+
+    font-weight:700;
+
+    color:#0F172A;
+
+}
+
+.trust-item p{
+
+    color:#64748B;
+
+    margin-top:10px;
+
+    margin-bottom:0;
+
+}
+/*=========================================
+ WHY CHOOSE US
+=========================================*/
+
+.why-us{
+
+    background:#F8FAFC;
+
+    padding:100px 0;
+
+}
+
+.section-tag{
+
+    display:inline-block;
+
+    background:#E0F2FE;
+
+    color:#0369A1;
+
+    padding:8px 18px;
+
+    border-radius:50px;
+
+    font-weight:600;
+
+    margin-bottom:20px;
+
+}
+
+.section-title{
+
+    font-size:2.6rem;
+
+    font-weight:800;
+
+    color:#0F172A;
+
+}
+
+.section-text{
+
+    max-width:700px;
+
+    margin:20px auto 0;
+
+    color:#64748B;
+
+    line-height:1.8;
+
+}
+
+.feature-card{
+
+    background:#ffffff;
+
+    padding:40px 30px;
+
+    border-radius:20px;
+
+    text-align:center;
+
+    height:100%;
+
+    transition:.35s;
+
+    border:1px solid #E2E8F0;
+
+}
+
+.feature-card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:0 20px 45px rgba(0,0,0,.08);
+
+}
+
+.feature-card i{
+
+    font-size:2.5rem;
+
+    color:#0F4C81;
+
+    margin-bottom:25px;
+
+}
+
+.feature-card h4{
+
+    font-weight:700;
+
+    margin-bottom:15px;
+
+    color:#0F172A;
+
+}
+
+.feature-card p{
+
+    color:#64748B;
+
+    line-height:1.7;
+
+    margin-bottom:0;
+
+}
