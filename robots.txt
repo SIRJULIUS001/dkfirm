@@ -1,0 +1,14 @@
+# ==========================================
+# DK ACCOUNT FIRM
+# https://sirjulius001.github.io/dkfirm/
+# ==========================================
+
+User-agent: *
+Allow: /
+
+# Block unnecessary folders (optional)
+Disallow: /assets/private/
+Disallow: /.git/
+
+# Sitemap Location
+Sitemap: https://sirjulius001.github.io/dkfirm/sitemap.xml
