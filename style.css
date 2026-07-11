@@ -1,0 +1,177 @@
+/* ==========================================
+   NAVBAR
+========================================== */
+
+.custom-navbar{
+
+    background:#ffffff;
+
+    padding:18px 0;
+
+    transition:.35s ease;
+
+    box-shadow:0 10px 35px rgba(0,0,0,.05);
+
+}
+
+.custom-navbar.scrolled{
+
+    padding:12px 0;
+
+    box-shadow:0 15px 40px rgba(0,0,0,.08);
+
+}
+
+/* Logo */
+
+.logo{
+
+    width:55px;
+
+    height:55px;
+
+    object-fit:contain;
+
+}
+
+.brand-title{
+
+    font-size:1rem;
+
+    font-weight:800;
+
+    color:#0F172A;
+
+    letter-spacing:.5px;
+
+}
+
+.brand-tagline{
+
+    color:#64748B;
+
+    font-size:.72rem;
+
+    letter-spacing:1px;
+
+}
+
+/* Menu */
+
+.navbar-nav{
+
+    gap:15px;
+
+}
+
+.nav-link{
+
+    font-weight:600;
+
+    color:#334155 !important;
+
+    position:relative;
+
+    transition:.3s;
+
+}
+
+.nav-link:hover{
+
+    color:#0F4C81 !important;
+
+}
+
+/* Underline Animation */
+
+.nav-link::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+
+    bottom:-6px;
+
+    width:0;
+
+    height:2px;
+
+    background:#0EA5E9;
+
+    transition:.3s;
+
+}
+
+.nav-link:hover::after,
+
+.nav-link.active::after{
+
+    width:100%;
+
+}
+
+/* CTA */
+
+.btn-consult{
+
+    background:#0F4C81;
+
+    color:white;
+
+    padding:12px 26px;
+
+    border-radius:50px;
+
+    font-weight:700;
+
+    transition:.3s;
+
+}
+
+.btn-consult:hover{
+
+    background:#10B981;
+
+    color:white;
+
+    transform:translateY(-3px);
+
+    box-shadow:0 10px 25px rgba(16,185,129,.35);
+
+}
+
+/* Mobile */
+
+@media(max-width:991px){
+
+.navbar-collapse{
+
+    background:white;
+
+    padding:25px;
+
+    margin-top:20px;
+
+    border-radius:15px;
+
+    box-shadow:0 20px 40px rgba(0,0,0,.08);
+
+}
+
+.navbar-nav{
+
+    gap:5px;
+
+    margin-bottom:20px;
+
+}
+
+.btn-consult{
+
+    width:100%;
+
+}
+
+}
