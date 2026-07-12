@@ -1558,113 +1558,155 @@ DK Account Firm | CPA Accounting, Tax & Business Advisory Services Kenya
 
     <div class="col-lg-7">
 
-        <div class="card border-0 shadow-lg">
+    <div class="card border-0 shadow-lg rounded-4">
 
-            <div class="card-body p-5">
+        <div class="card-body p-4 p-lg-5">
 
-                <h3 class="fw-bold mb-4">
-                    Send Us A Message
-                </h3>
+            <span class="badge bg-info-subtle text-info mb-3">
+                Contact Form
+            </span>
 
-                <form>
+            <h3 class="fw-bold mb-2">
+                Send Us A Message
+            </h3>
 
-                    <div class="row">
+            <p class="text-muted mb-4">
+                Fill in the form below and we'll get back to you within one business day.
+            </p>
 
-                        <div class="col-md-6 mb-3">
+            <form action="https://formspree.io/f/xeeryqga" method="POST">
 
-                            <label class="form-label">
-                                Full Name
-                            </label>
+                <!-- Redirect after success -->
 
-                            <input
-                                type="text"
-                                class="form-control form-control-lg"
-                                placeholder="Your Name">
+                <!-- Subject -->
+                <input type="hidden"
+                       name="_subject"
+                       value="New Website Enquiry - DK Account Firm">
 
-                        </div>
+                <!-- Disable captcha (optional) -->
+                <input type="hidden"
+                       name="_captcha"
+                       value="false">
 
-                        <div class="col-md-6 mb-3">
+                <div class="row">
 
-                            <label class="form-label">
-                                Phone Number
-                            </label>
+                    <div class="col-md-6 mb-3">
 
-                            <input
-                                type="text"
-                                class="form-control form-control-lg"
-                                placeholder="+254">
-
-                        </div>
-
-                    </div>
-
-                    <div class="mb-3">
-
-                        <label class="form-label">
-                            Email Address
+                        <label class="form-label fw-semibold">
+                            Full Name
                         </label>
 
                         <input
-                            type="email"
+                            type="text"
+                            name="Full Name"
                             class="form-control form-control-lg"
-                            placeholder="name@example.com">
+                            placeholder="John Doe"
+                            autocomplete="name"
+                            required>
 
                     </div>
 
-                    <div class="mb-3">
+                    <div class="col-md-6 mb-3">
 
-                        <label class="form-label">
-                            Service Required
+                        <label class="form-label fw-semibold">
+                            Phone Number
                         </label>
 
-                        <select class="form-select form-select-lg">
-
-                            <option>Bookkeeping</option>
-
-                            <option>Payroll</option>
-
-                            <option>KRA Tax Filing</option>
-
-                            <option>Audit Services</option>
-
-                            <option>Business Registration</option>
-
-                            <option>ICT Solutions</option>
-
-                            <option>General Consultation</option>
-
-                        </select>
+                        <input
+                            type="tel"
+                            name="Phone"
+                            class="form-control form-control-lg"
+                            placeholder="+254 7XX XXX XXX"
+                            autocomplete="tel"
+                            required>
 
                     </div>
 
-                    <div class="mb-4">
+                </div>
 
-                        <label class="form-label">
-                            Message
-                        </label>
+                <div class="mb-3">
 
-                        <textarea
-                            rows="6"
-                            class="form-control"
-                            placeholder="Tell us how we can help..."></textarea>
+                    <label class="form-label fw-semibold">
+                        Email Address
+                    </label>
 
-                    </div>
+                    <input
+                        type="email"
+                        name="Email"
+                        class="form-control form-control-lg"
+                        placeholder="name@example.com"
+                        autocomplete="email"
+                        required>
 
-                    <button class="btn btn-primary btn-lg px-5">
+                </div>
 
-                        <i class="fas fa-paper-plane me-2"></i>
+                <div class="mb-3">
 
-                        Send Message
+                    <label class="form-label fw-semibold">
+                        Service Required
+                    </label>
 
-                    </button>
+                    <select
+                        name="Service"
+                        class="form-select form-select-lg"
+                        required>
 
-                </form>
+                        <option value="">Select a Service</option>
 
-            </div>
+                        <option>Bookkeeping</option>
+
+                        <option>Accounting Services</option>
+
+                        <option>Payroll Management</option>
+
+                        <option>KRA Tax Filing</option>
+
+                        <option>Audit & Assurance</option>
+
+                        <option>Business Registration</option>
+
+                        <option>ICT & Digital Accounting</option>
+
+                        <option>Business Advisory</option>
+
+                        <option>General Consultation</option>
+
+                    </select>
+
+                </div>
+
+                <div class="mb-4">
+
+                    <label class="form-label fw-semibold">
+                        Your Message
+                    </label>
+
+                    <textarea
+                        rows="6"
+                        name="Message"
+                        class="form-control"
+                        placeholder="Tell us about your business or how we can help..."
+                        required></textarea>
+
+                </div>
+
+                <button
+                    type="submit"
+                    class="btn btn-primary btn-lg px-5 rounded-pill">
+
+                    <i class="fas fa-paper-plane me-2"></i>
+
+                    Send Message
+
+                </button>
+
+            </form>
 
         </div>
 
     </div>
+
+</div>
 
 </div>
 
@@ -1943,3 +1985,120 @@ Chat on WhatsApp
     <i class="fas fa-arrow-up"></i>
 
 </a>
+<!-- Success Modal -->
+
+<div class="modal fade"
+     id="successModal"
+     tabindex="-1">
+
+    <div class="modal-dialog modal-dialog-centered">
+
+        <div class="modal-content border-0 shadow-lg">
+
+            <div class="modal-body text-center p-5">
+
+                <div class="mb-4">
+
+                    <div class="rounded-circle bg-success bg-opacity-10 d-inline-flex align-items-center justify-content-center"
+                         style="width:90px;height:90px;">
+
+                        <i class="fas fa-check fa-3x text-success"></i>
+
+                    </div>
+
+                </div>
+
+                <h2 class="fw-bold mb-3">
+
+                    Message Sent Successfully!
+
+                </h2>
+
+                <p class="text-muted mb-4">
+
+                    Thank you for contacting
+                    <strong>DK Account Firm.</strong>
+
+                    We have received your enquiry and
+                    one of our consultants will respond
+                    within one business day.
+
+                </p>
+
+                <button class="btn btn-primary px-5"
+                        data-bs-dismiss="modal">
+
+                    Continue Browsing
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script>
+
+const form = document.getElementById("contactForm");
+
+form.addEventListener("submit", async function(e){
+
+    e.preventDefault();
+
+    const submitBtn = form.querySelector("button[type='submit']");
+
+    submitBtn.disabled = true;
+
+    submitBtn.innerHTML = `
+        <span class="spinner-border spinner-border-sm me-2"></span>
+        Sending...
+    `;
+
+    try{
+
+        const response = await fetch(form.action,{
+            method:"POST",
+            body:new FormData(form),
+            headers:{
+                Accept:"application/json"
+            }
+        });
+
+        if(response.ok){
+
+            form.reset();
+
+            const modal =
+                new bootstrap.Modal(
+                    document.getElementById("successModal")
+                );
+
+            modal.show();
+
+        }else{
+
+            alert("Unable to send your message. Please try again.");
+
+        }
+
+    }catch(error){
+
+        alert("Network error. Please check your internet connection.");
+
+    }
+
+    submitBtn.disabled = false;
+
+    submitBtn.innerHTML = `
+        <i class="fas fa-paper-plane me-2"></i>
+        Send Message
+    `;
+
+});
+
+</script>
+</body>
+</html>
