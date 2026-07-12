@@ -1,179 +1,185 @@
 /* ==========================================
    NAVBAR
 ========================================== */
+/* =====================================================
+   NAVIGATION BAR
+===================================================== */
 
 .custom-navbar{
-
     background:#ffffff;
-
     padding:18px 0;
-
-    transition:.35s ease;
-
+    transition:all .35s ease;
     box-shadow:0 10px 35px rgba(0,0,0,.05);
-
+    z-index:1030;
 }
 
 .custom-navbar.scrolled{
-
     padding:12px 0;
-
     box-shadow:0 15px 40px rgba(0,0,0,.08);
-
 }
 
-/* Logo */
+/* =====================================================
+   BRAND
+===================================================== */
 
 .logo{
-
     width:55px;
-
     height:55px;
-
     object-fit:contain;
-
 }
 
 .brand-title{
-
     font-size:1rem;
-
     font-weight:800;
-
     color:#0F172A;
-
     letter-spacing:.5px;
-
+    line-height:1.2;
 }
 
 .brand-tagline{
-
     color:#64748B;
-
     font-size:.72rem;
-
     letter-spacing:1px;
-
 }
 
-/* Menu */
+/* =====================================================
+   NAVIGATION LINKS
+===================================================== */
 
 .navbar-nav{
-
-    gap:15px;
-
+    gap:14px;
 }
 
-.nav-link{
-
-    font-weight:600;
-
-    color:#334155 !important;
-
+.navbar-nav .nav-link{
     position:relative;
-
-    transition:.3s;
-
+    font-size:.95rem;
+    font-weight:600;
+    color:#334155 !important;
+    padding:.65rem .25rem;
+    transition:all .3s ease;
 }
 
-.nav-link:hover{
-
-    color:#0F4C81 !important;
-
+.navbar-nav .nav-link:hover{
+    color:#0EA5E9 !important;
 }
 
-/* Underline Animation */
+.navbar-nav .nav-link.active{
+    color:#0EA5E9 !important;
+}
 
-.nav-link::after{
+/* Underline */
 
+.navbar-nav .nav-link::after{
     content:"";
-
     position:absolute;
-
     left:0;
-
-    bottom:-6px;
-
+    bottom:-4px;
     width:0;
-
     height:2px;
-
     background:#0EA5E9;
-
-    transition:.3s;
-
+    border-radius:20px;
+    transition:width .3s ease;
 }
 
-.nav-link:hover::after,
-
-.nav-link.active::after{
-
+.navbar-nav .nav-link:hover::after,
+.navbar-nav .nav-link.active::after{
     width:100%;
-
 }
 
-/* CTA */
+/* Keyboard Accessibility */
+
+.navbar-nav .nav-link:focus{
+    color:#0EA5E9 !important;
+    outline:none;
+}
+
+/* =====================================================
+   CTA BUTTON
+===================================================== */
 
 .btn-consult{
-
     background:#0F4C81;
-
-    color:white;
-
-    padding:12px 26px;
-
+    color:#fff;
+    padding:12px 28px;
     border-radius:50px;
-
     font-weight:700;
-
-    transition:.3s;
-
+    text-decoration:none;
+    transition:all .3s ease;
+    white-space:nowrap;
+    border:none;
 }
 
 .btn-consult:hover{
-
     background:#10B981;
-
-    color:white;
-
+    color:#fff;
     transform:translateY(-3px);
+    box-shadow:0 12px 28px rgba(16,185,129,.30);
+}
 
-    box-shadow:0 10px 25px rgba(16,185,129,.35);
+.btn-consult:focus{
+    color:#fff;
+}
+
+/* =====================================================
+   HAMBURGER BUTTON
+===================================================== */
+
+.navbar-toggler{
+    border:none;
+    box-shadow:none !important;
+}
+
+.navbar-toggler:focus{
+    box-shadow:none;
+}
+
+/* =====================================================
+   MOBILE NAVIGATION
+===================================================== */
+
+@media (max-width:991.98px){
+
+    .navbar-collapse{
+        background:#ffffff;
+        margin-top:18px;
+        padding:25px;
+        border-radius:18px;
+        box-shadow:0 20px 45px rgba(15,23,42,.08);
+    }
+
+    .navbar-nav{
+        gap:6px;
+        margin-bottom:20px;
+    }
+
+    .navbar-nav .nav-link{
+        padding:12px 10px;
+        border-radius:8px;
+    }
+
+    .navbar-nav .nav-link:hover{
+        background:#F0F9FF;
+    }
+
+    .navbar-nav .nav-link::after{
+        display:none;
+    }
+
+    .btn-consult{
+        width:100%;
+        text-align:center;
+        justify-content:center;
+    }
 
 }
 
-/* Mobile */
+/* =====================================================
+   ACTIVE SECTION (for ScrollSpy)
+===================================================== */
 
-@media(max-width:991px){
-
-.navbar-collapse{
-
-    background:white;
-
-    padding:25px;
-
-    margin-top:20px;
-
-    border-radius:15px;
-
-    box-shadow:0 20px 40px rgba(0,0,0,.08);
-
-}
-
-.navbar-nav{
-
-    gap:5px;
-
-    margin-bottom:20px;
-
-}
-
-.btn-consult{
-
-    width:100%;
-
-}
-
+.navbar-nav .nav-link.active{
+    color:#0EA5E9 !important;
+    font-weight:700;
 }
 /*=========================================
  HERO SECTION
