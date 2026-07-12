@@ -1305,60 +1305,139 @@ footer hr{
     }
 
 }
-/* ===========================
-404 PAGE
-=========================== */
+/* ======================================================
+   404 PAGE
+====================================================== */
 
 .error-page{
-
     min-height:100vh;
-
     display:flex;
-
     align-items:center;
-
     justify-content:center;
+    padding:100px 20px;
+    background:linear-gradient(180deg,#f8fbff 0%,#eef7fc 100%);
+    text-align:center;
+}
 
+.error-page .card{
+    border:none;
+    border-radius:25px;
+    box-shadow:0 25px 60px rgba(15,23,42,.08);
+    padding:60px 40px;
+    max-width:720px;
+    width:100%;
+    background:#fff;
 }
 
 .error-page h1{
-
     font-size:8rem;
-
     font-weight:900;
-
     color:#0ea5e9;
-
+    line-height:1;
+    margin-bottom:10px;
 }
 
 .error-page h2{
+    font-size:2rem;
+    font-weight:800;
+    color:#0f172a;
+    margin-bottom:20px;
+}
 
-    font-weight:700;
-
+.error-page p{
+    color:#64748b;
+    font-size:1.05rem;
+    max-width:520px;
+    margin:auto auto 30px;
 }
 
 .error-page img{
-
+    width:230px;
+    max-width:100%;
     animation:float 4s ease-in-out infinite;
+}
 
+.error-page .btn{
+    border-radius:12px;
+    padding:14px 35px;
+    font-weight:700;
 }
 
 @keyframes float{
 
-    0%{transform:translateY(0);}
+    0%{
+        transform:translateY(0px);
+    }
 
-    50%{transform:translateY(-15px);}
+    50%{
+        transform:translateY(-15px);
+    }
 
-    100%{transform:translateY(0);}
+    100%{
+        transform:translateY(0px);
+    }
 
 }
-/* =========================================
-LEGAL PAGES
-========================================= */
+
+
+/* ======================================================
+   LEGAL PAGE HERO
+====================================================== */
+
+.legal-hero{
+
+    background:linear-gradient(135deg,#0ea5e9,#0284c7);
+
+    color:#fff;
+
+    padding:90px 0;
+
+    text-align:center;
+
+}
+
+.legal-hero h1{
+
+    font-weight:900;
+
+    margin-bottom:15px;
+
+}
+
+.legal-hero p{
+
+    max-width:700px;
+
+    margin:auto;
+
+    opacity:.92;
+
+    font-size:1.05rem;
+
+}
+
+.legal-hero .badge{
+
+    background:rgba(255,255,255,.15);
+
+    border:1px solid rgba(255,255,255,.25);
+
+    padding:10px 18px;
+
+    font-weight:600;
+
+}
+
+
+/* ======================================================
+   LEGAL CONTENT
+====================================================== */
 
 .legal-page{
 
-    padding:80px 0;
+    padding:90px 0;
+
+    background:#f8fafc;
 
 }
 
@@ -1366,9 +1445,17 @@ LEGAL PAGES
 
     border:none;
 
-    border-radius:20px;
+    border-radius:22px;
 
-    box-shadow:0 15px 40px rgba(0,0,0,.08);
+    overflow:hidden;
+
+    box-shadow:0 18px 45px rgba(15,23,42,.08);
+
+}
+
+.legal-page .card-body{
+
+    padding:50px;
 
 }
 
@@ -1378,6 +1465,8 @@ LEGAL PAGES
 
     color:#0f172a;
 
+    margin-bottom:25px;
+
 }
 
 .legal-page h4{
@@ -1386,7 +1475,37 @@ LEGAL PAGES
 
     font-weight:700;
 
-    margin-bottom:15px;
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+    margin-top:35px;
+
+    margin-bottom:18px;
+
+}
+
+.legal-page h4 i{
+
+    width:42px;
+
+    height:42px;
+
+    border-radius:12px;
+
+    background:#e0f2fe;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    color:#0284c7;
+
+    font-size:18px;
 
 }
 
@@ -1396,21 +1515,188 @@ LEGAL PAGES
 
     line-height:1.9;
 
+    margin-bottom:20px;
+
+}
+
+.legal-page ul{
+
+    padding-left:0;
+
+    list-style:none;
+
 }
 
 .legal-page li{
 
-    margin-bottom:10px;
+    position:relative;
+
+    padding-left:35px;
+
+    margin-bottom:15px;
 
     color:#475569;
+
+    line-height:1.8;
+
+}
+
+.legal-page li::before{
+
+    content:"✓";
+
+    position:absolute;
+
+    left:0;
+
+    top:1px;
+
+    width:22px;
+
+    height:22px;
+
+    border-radius:50%;
+
+    background:#0ea5e9;
+
+    color:#fff;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    font-size:12px;
+
+    font-weight:bold;
 
 }
 
 .legal-page hr{
 
-    margin:40px 0;
+    margin:45px 0;
 
-    opacity:.15;
+    border-color:#e2e8f0;
+
+    opacity:1;
+
+}
+
+
+/* ======================================================
+   LEGAL INFO BOX
+====================================================== */
+
+.legal-note{
+
+    background:#eff6ff;
+
+    border-left:5px solid #0ea5e9;
+
+    border-radius:15px;
+
+    padding:22px;
+
+    margin:30px 0;
+
+}
+
+.legal-note strong{
+
+    color:#0f172a;
+
+}
+
+.legal-note p{
+
+    margin:0;
+
+}
+
+
+/* ======================================================
+   CONTACT CTA
+====================================================== */
+
+.legal-contact{
+
+    background:#fff;
+
+    border-radius:20px;
+
+    padding:35px;
+
+    text-align:center;
+
+    box-shadow:0 15px 35px rgba(15,23,42,.08);
+
+    margin-top:60px;
+
+}
+
+.legal-contact h3{
+
+    font-weight:800;
+
+    color:#0f172a;
+
+}
+
+.legal-contact p{
+
+    color:#64748b;
+
+    margin-bottom:25px;
+
+}
+
+.legal-contact .btn{
+
+    border-radius:12px;
+
+    padding:14px 35px;
+
+    font-weight:700;
+
+}
+
+
+/* ======================================================
+   MOBILE
+====================================================== */
+
+@media(max-width:768px){
+
+    .error-page h1{
+
+        font-size:5rem;
+
+    }
+
+    .error-page .card{
+
+        padding:40px 25px;
+
+    }
+
+    .legal-page{
+
+        padding:60px 0;
+
+    }
+
+    .legal-page .card-body{
+
+        padding:30px;
+
+    }
+
+    .legal-hero{
+
+        padding:70px 20px;
+
+    }
 
 }
 /* ================================
