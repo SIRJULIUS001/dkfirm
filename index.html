@@ -72,42 +72,15 @@ DK Account Firm | CPA Accounting, Tax & Business Advisory Services Kenya
 
 <meta property="og:locale"
       content="en_KE">
-
-    <!-- ==========================================
-     OPEN GRAPH
-========================================== -->
-
-<meta property="og:type"
-      content="website">
-
-<meta property="og:site_name"
-      content="DK Account Firm">
-
-<meta property="og:title"
-      content="DK Account Firm | Professional Accounting & Tax Experts in Kenya">
-
-<meta property="og:description"
-      content="Professional bookkeeping, KRA tax compliance, payroll management, audit support and business advisory services in Meru and across Kenya.">
-
-<meta property="og:url"
-      content="https://sirjulius001.github.io/dkfirm/">
-
-<meta property="og:image"
-      content="https://sirjulius001.github.io/dkfirm/assets/images/og-image.jpg">
-
-<meta property="og:image:width"
-      content="1200">
-
-<meta property="og:image:height"
-      content="630">
-
-<meta property="og:locale"
-      content="en_KE">
-
+    
+<meta name="format-detection"
+      content="telephone=no">
     <!-- ==========================================
      TWITTER
 ========================================== -->
-
+<meta name="twitter:url"
+      content="https://sirjulius001.github.io/dkfirm/">
+    
 <meta name="twitter:card"
       content="summary_large_image">
 
@@ -119,36 +92,126 @@ DK Account Firm | CPA Accounting, Tax & Business Advisory Services Kenya
 
 <meta name="twitter:image"
       content="https://sirjulius001.github.io/dkfirm/assets/images/og-image.jpg">
-
-    <script type="application/ld+json">
+<script type="application/ld+json">
 {
-  "@context":"https://schema.org",
-  "@type":"AccountingService",
-  "name":"DK Account Firm",
-  "url":"https://sirjulius001.github.io/dkfirm/",
-  "logo":"https://sirjulius001.github.io/dkfirm/logo1.png",
-  "image":"https://sirjulius001.github.io/dkfirm/assets/images/og-image.jpg",
-  "description":"Professional accounting, bookkeeping, payroll, taxation, audit support and business advisory services in Kenya.",
-  "telephone":"+254110311712",
-  "email":"dkirimi152@gmail.com",
-  "address":{
-    "@type":"PostalAddress",
-    "addressLocality":"Meru",
-    "addressCountry":"KE"
+  "@context": "https://schema.org",
+  "@type": "AccountingService",
+  "@id": "https://sirjulius001.github.io/dkfirm/#organization",
+  "name": "DK Account Firm",
+  "url": "https://sirjulius001.github.io/dkfirm/",
+  "logo": "https://sirjulius001.github.io/dkfirm/logo1.png",
+  "image": "https://sirjulius001.github.io/dkfirm/assets/images/og-image.jpg",
+  "description": "DK Account Firm provides professional bookkeeping, accounting, payroll management, tax consultancy, audit support, business registration and financial advisory services for businesses across Kenya.",
+  "telephone": "+254110311712",
+  "email": "mailto:dkirimi152@gmail.com",
+  "priceRange": "$$",
+
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Meru",
+    "addressRegion": "Meru County",
+    "addressCountry": "KE"
   },
-  "areaServed":"Kenya",
-  "priceRange":"$$",
-  "serviceType":[
-    "Accounting",
-    "Bookkeeping",
-    "Payroll",
-    "Tax Consultancy",
-    "Audit Support",
-    "Business Registration",
-    "Financial Advisory"
+
+  "areaServed": {
+    "@type": "Country",
+    "name": "Kenya"
+  },
+
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday"
+      ],
+      "opens": "08:00",
+      "closes": "17:00"
+    }
+  ],
+
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Professional Accounting & Business Services",
+    "itemListElement": [
+
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Bookkeeping Services"
+        }
+      },
+
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Accounting & Financial Statements"
+        }
+      },
+
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Payroll Management"
+        }
+      },
+
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Tax Consultancy & KRA Compliance"
+        }
+      },
+
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Audit Support & Assurance"
+        }
+      },
+
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Business Registration"
+        }
+      },
+
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Financial Advisory & Business Consultancy"
+        }
+      },
+
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Accounting Software Setup (QuickBooks & Sage)"
+        }
+      }
+
+    ]
+  },
+
+  "sameAs": [
+    "https://wa.me/254110311712"
   ]
 }
 </script>
+<script src="main.js"></script>
+    
     <!-- ==========================================
          FAVICON
     =========================================== -->
@@ -238,80 +301,82 @@ DK Account Firm | CPA Accounting, Tax & Business Advisory Services Kenya
 
         <!-- Menu -->
 
-        <div class="collapse navbar-collapse"
-             id="navbar">
+       <div class="collapse navbar-collapse justify-content-between"
+     id="navbar">
 
-            <ul class="navbar-nav mx-auto">
+    <!-- Navigation -->
 
-                <li class="nav-item">
+    <ul class="navbar-nav mx-auto align-items-lg-center">
 
-                    <a class="nav-link active"
-                       href="#home">
-                        Home
-                    </a>
-
-                </li>
-
-                <li class="nav-item">
-
-                    <a class="nav-link"
-                       href="#about">
-                        About
-                    </a>
-
-                </li>
-
-                <li class="nav-item">
-
-                    <a class="nav-link"
-                       href="#services">
-                        Services
-                    </a>
-
-                </li>
-
-                <li class="nav-item">
-
-                    <a class="nav-link"
-                       href="#process">
-                        Process
-                    </a>
-
-                </li>
-
-                <li class="nav-item">
-
-                    <a class="nav-link"
-                       href="#testimonials">
-                        Testimonials
-                    </a>
-
-                </li>
-
-                <li class="nav-item">
-
-                    <a class="nav-link"
-                       href="#contact">
-                        Contact
-                    </a>
-
-                </li>
-
-            </ul>
-
-            <!-- CTA -->
-
-            <a href="#contact"
-               class="btn btn-consult">
-
-                Book Consultation
-
+        <li class="nav-item">
+            <a class="nav-link active"
+               href="#home"
+               aria-current="page">
+                Home
             </a>
+        </li>
 
-        </div>
+        <li class="nav-item">
+            <a class="nav-link"
+               href="#about">
+                About
+            </a>
+        </li>
+
+        <li class="nav-item">
+            <a class="nav-link"
+               href="#services">
+                Services
+            </a>
+        </li>
+
+        <li class="nav-item">
+            <a class="nav-link"
+               href="#process">
+                Our Process
+            </a>
+        </li>
+
+        <li class="nav-item">
+            <a class="nav-link"
+               href="#testimonials">
+                Testimonials
+            </a>
+        </li>
+
+        <li class="nav-item">
+            <a class="nav-link"
+               href="#faqs">
+                FAQs
+            </a>
+        </li>
+
+        <li class="nav-item">
+            <a class="nav-link"
+               href="#contact">
+                Contact
+            </a>
+        </li>
+
+    </ul>
+
+    <!-- CTA -->
+
+    <div class="d-flex justify-content-center mt-4 mt-lg-0">
+
+        <a href="#contact"
+           class="btn btn-consult px-4"
+           aria-label="Book a consultation with DK Account Firm">
+
+            <i class="fas fa-calendar-check me-2"></i>
+
+            Book Consultation
+
+        </a>
 
     </div>
 
+</div>
 </nav>
 </header>
 
